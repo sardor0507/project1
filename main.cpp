@@ -1,34 +1,42 @@
 #include <iostream>
-#include <iomanip>
 using namespace std;
 int main() {
-    //problem 1
-    string name;
-    int age;
-    cout  <<"Hi, your name please?:";
-    cin>>name;
-    cout << " How old are you?: ";
-    cin>>age;
-    cout << name << " you are " << age << " years old." << endl;
-    //problem 2
-    for (int i = 1; i <= 5; ++i)
-        cout << setw(5) << i << endl;
-    //problem 3
-    int a, b;
-    cout << "Enter two integers: ";
-    cin >> a >> b;
-    // Swapping the values
-    int temp = a;
-    a = b;
-    b = temp;
-    cout << "Swapped values: " << "a = " << a << ", b = " << b << endl;
-    //problem 4
-    int n;
+   /* for (int i = 1; i <= 10; ++i) {
+        cout << i << " ";
+    }*/
+
+   /* int N;
     cout << "Enter a number: ";
-    cin >> n;
-    cout << setw(10) << "Number" << setw(10) << "Square" << endl;
-    for (int i = 1; i <= n; ++i) {
-        cout << setw(10) << i << setw(10) << i * i << endl;
+    cin >> N;
+
+    for (int i = 1; i <= N; ++i) {
+        cout << i << " ";
+    }*/
+
+
+   /* int sum = 0;
+    for (int i = 1; i <= 10; ++i) {
+        sum += i;
     }
+    cout << "Sum of first 10 natural numbers is: " << sum << std::endl;*/
+
+    /*int N;
+    cout << "Enter a number: ";
+    cin >> N;
+
+    int sum = 0;
+    for (int i = 1; i <= N; ++i) {
+    sum += i;
+    }
+    cout << "Sum of first " << N << " natural numbers is: " << sum << std::endl; */
+
+
+    int sum = 0;
+    for (int i = 1; i <= 10; ++i) {
+        sum += i;
+    }
+    double average = sum / 10.0;
+    cout << "Average of first 10 natural numbers is: " << average << std::endl;
+
     return 0;
 }
